@@ -5,20 +5,6 @@
 Welcome to my personal website repository. This website showcases my work as a Full-Stack Web Developer from Samarkand.
 Below, you'll find information on how to navigate and contribute to the project.
 
-## Table of Contents
-
-- [Ilhomjonov Iqbolshoh's - Personal Website](#ilhomjonov-iqbolshohs---personal-website)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-    - [Desktop View](#desktop-view)
-    - [Mobile View](#mobile-view)
-  - [Technologies Used](#technologies-used)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Pages](#pages)
-  - [Contributing](#contributing)
-  - [Connect with Me](#connect-with-me)
-
 ## Overview
 
 This is the source code for my personal website, which includes sections such as "About", "Portfolio", and "Contact".
