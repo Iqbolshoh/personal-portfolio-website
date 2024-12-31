@@ -1,5 +1,5 @@
 (function () {
-    emailjs.init("9L46WTC-cbuJJaFDq");
+    emailjs.init("7L36WTC-cbuJJaVDq");
 })();
 document.getElementById('submit').addEventListener('click', function (event) {
     event.preventDefault();
@@ -9,7 +9,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
 
     console.log(name, email, message);
 
-    emailjs.send("service_jipsdt", "template_uufhdfe", {
+    emailjs.send("service_jiprdt", "template_uvfhdfe", {
         to_name: "Iqbolshoh",
         message: message,
         email_id: email,
