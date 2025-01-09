@@ -52,13 +52,13 @@ To get a local copy up and running, follow these simple steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Iqbolshoh/template-personal-website.git
+git clone https://github.com/Iqbolshoh/website-personal-portfolio.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd template-personal-website
+cd website-personal-portfolio
 ```
 
 3. Open `index.html` in your web browser to view the website.
