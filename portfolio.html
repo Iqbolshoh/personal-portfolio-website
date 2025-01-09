@@ -1,147 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./src/css/portfolio.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="icon" href="./favicon.ico">
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const portfolioItems = [
-                {
-                    name: "Encryption",
-                    url: "https://projects.iqbolshoh.uz/encryption/",
-                    img: "src/images/encryption.png",
-                    github: "https://github.com/Iqbolshoh/javascript-text-encryption"
-                },
-                {
-                    name: "Slider",
-                    url: "https://projects.iqbolshoh.uz/slider/",
-                    img: "src/images/slider.png",
-                    github: "https://github.com/Iqbolshoh/template-javascript-slider"
-                },
-                {
-                    name: "Travel site",
-                    url: "https://travel-samarkand.netlify.app/",
-                    img: "src/images/travel_site.png",
-                    github: "https://github.com/Iqbolshoh/website-samarkand-travel"
-                },
-                {
-                    name: "Timer",
-                    url: "https://projects.iqbolshoh.uz/timer/",
-                    img: "src/images/timer.png",
-                    github: "https://github.com/Iqbolshoh/javascript-timer"
-                },
-                {
-                    name: "Clock",
-                    url: "https://projects.iqbolshoh.uz/clock/",
-                    img: "src/images/clock.png",
-                    github: "https://github.com/Iqbolshoh/javascript-clock"
-                },
-                {
-                    name: "XO Game",
-                    url: "https://projects.iqbolshoh.uz/xo/",
-                    img: "src/images/xo_game.png",
-                    github: "https://github.com/Iqbolshoh/javascript-xo-game"
-                },
-                {
-                    name: "Calculator",
-                    url: "https://projects.iqbolshoh.uz/calculator/",
-                    img: "src/images/calculator.png",
-                    github: "https://github.com/Iqbolshoh/javascript-calculator"
-                },
-                {
-                    name: "Form",
-                    url: "https://projects.iqbolshoh.uz/form/",
-                    img: "src/images/form.png",
-                    github: "https://github.com/Iqbolshoh/template-html-css-form"
-                },
-                {
-                    name: "Templates.uz",
-                    url: "https://projects.iqbolshoh.uz/https://templates.uz/",
-                    img: "src/images/templates.png",
-                    github: "https://github.com/Iqbolshoh/templates.uz"
-                },
-                {
-                    name: "Market",
-                    url: "https://market.iqbolshoh.uz/login/",
-                    img: "src/images/market.png",
-                    github: "https://github.com/Iqbolshoh/php-mysql-marketplace"
-                },
-                {
-                    name: "English",
-                    url: "https://projects.iqbolshoh.uz/english/",
-                    img: "src/images/english.png",
-                    github: "https://github.com/Iqbolshoh/website-english-platform"
-                }
-            ]
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("./js/projects.json")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            const portfolioGrid = document.querySelector(".portfolio-grid");
 
-            const portfolioGrid = document.querySelector(".portfolio-grid")
+            const fragment = document.createDocumentFragment();
 
-            portfolioItems.forEach(item => {
-                const portfolioItem = document.createElement("div")
-                portfolioItem.classList.add("portfolio-item")
+            data.forEach((item) => {
+              const portfolioItem = document.createElement("div");
+              portfolioItem.classList.add("portfolio-item");
 
-                const portfolioLink = document.createElement("a")
-                portfolioLink.href = item.url
-                portfolioLink.classList.add("portfolio-link")
+              const portfolioLink = document.createElement("a");
+              portfolioLink.href = item.url;
+              portfolioLink.classList.add("portfolio-link");
+              portfolioLink.target = "_blank";
 
-                const imgElement = document.createElement("img")
-                imgElement.src = item.img
-                portfolioLink.appendChild(imgElement)
+              const imgElement = document.createElement("img");
+              imgElement.src = item.img;
+              portfolioLink.appendChild(imgElement);
 
-                const nameElement = document.createElement("div")
-                nameElement.classList.add("item-name")
-                nameElement.textContent = item.name
-                portfolioLink.appendChild(nameElement)
+              const nameElement = document.createElement("div");
+              nameElement.classList.add("item-name");
+              nameElement.textContent = item.name;
+              portfolioLink.appendChild(nameElement);
 
-                portfolioItem.appendChild(portfolioLink)
+              portfolioItem.appendChild(portfolioLink);
 
-                const portfolioIcons = document.createElement("div")
-                portfolioIcons.classList.add("portfolio-icons")
+              const portfolioIcons = document.createElement("div");
+              portfolioIcons.classList.add("portfolio-icons");
 
-                if (item.github) {
-                    const githubIcon = document.createElement("a")
-                    githubIcon.href = item.github
-                    githubIcon.target = "_blank"
-                    githubIcon.innerHTML = '<i class="fab fa-github"></i>'
-                    portfolioIcons.appendChild(githubIcon)
+              if (item.github) {
+                const githubIcon = document.createElement("a");
+                githubIcon.href = item.github;
+                githubIcon.target = "_blank";
+                githubIcon.innerHTML = '<i class="fab fa-github"></i>';
+                portfolioIcons.appendChild(githubIcon);
 
-                    const downloadIcon = document.createElement("a")
-                    downloadIcon.href = `${item.github}/archive/refs/heads/main.zip`
-                    downloadIcon.target = "_blank"
-                    downloadIcon.innerHTML = '<i class="fas fa-download"></i>'
-                    portfolioIcons.appendChild(downloadIcon)
-                }
+                const downloadIcon = document.createElement("a");
+                downloadIcon.href = `${item.github}/archive/refs/heads/main.zip`;
+                downloadIcon.target = "_blank";
+                downloadIcon.innerHTML = '<i class="fas fa-download"></i>';
+                portfolioIcons.appendChild(downloadIcon);
+              }
 
-                portfolioItem.appendChild(portfolioIcons)
+              portfolioItem.appendChild(portfolioIcons);
 
-                portfolioGrid.appendChild(portfolioItem)
-            })
-        })
+              fragment.appendChild(portfolioItem);
+            });
+
+            portfolioGrid.appendChild(fragment);
+          })
+          .catch((error) =>
+            console.error("Error loading the JSON file:", error)
+          );
+      });
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header-container">
-        <h2 class="logo-text" onclick="window.location.href='./'"><span class="logo-highlight">Iqbol</span>shoh</h2>
-        <nav class="nav-links">
-            <a href="./">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <a href="portfolio.html" class="button-projects">My Projects</a>
+      <h2 class="logo-text" onclick="window.location.href='./'">
+        <span class="logo-highlight">Iqbol</span>shoh
+      </h2>
+      <nav class="nav-links">
+        <a href="./">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="portfolio.html" class="button-projects">My Projects</a>
     </header>
 
     <div class="container">
-        <div class="portfolio-grid"></div>
+      <div class="portfolio-grid"></div>
     </div>
-</body>
-
+  </body>
 </html>
