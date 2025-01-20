@@ -11,7 +11,26 @@
     <link rel="stylesheet" href="./css/header.css">
 
     <link rel="icon" href="./favicon.ico">
+  </head>
 
+  <body>
+    <header class="header-container">
+      <h2 class="logo-text" onclick="window.location.href='./'">
+        <span class="logo-highlight">Iqbol</span>shoh
+      </h2>
+      <nav class="nav-links">
+        <a href="./">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="portfolio.html" class="button-projects">My Projects</a>
+    </header>
+
+    <div class="container">
+      <div class="portfolio-grid"></div>
+    </div>
+    
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         fetch("./src/js/projects.json")
@@ -75,24 +94,5 @@
           );
       });
     </script>
-  </head>
-
-  <body>
-    <header class="header-container">
-      <h2 class="logo-text" onclick="window.location.href='./'">
-        <span class="logo-highlight">Iqbol</span>shoh
-      </h2>
-      <nav class="nav-links">
-        <a href="./">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <a href="portfolio.html" class="button-projects">My Projects</a>
-    </header>
-
-    <div class="container">
-      <div class="portfolio-grid"></div>
-    </div>
   </body>
 </html>
