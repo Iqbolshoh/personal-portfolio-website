@@ -1,63 +1,15 @@
 [
     {
-        "name": "Form",
-        "url": "https://projects.iqbolshoh.uz/form/",
-        "img": "src/images/projects/form.png",
-        "github": "https://github.com/Iqbolshoh/template-html-css-form"
+        "name": "Social Messenger",
+        "url": "https://messenger.iqbolshoh.uz/",
+        "img": "src/images/projects/social-messenger.png",
+        "github": "https://github.com/Iqbolshoh/php-social-messenger"
     },
     {
-        "name": "Travel site",
-        "url": "https://travel-samarkand.netlify.app/",
-        "img": "src/images/projects/travel_site.png",
-        "github": "https://github.com/Iqbolshoh/website-samarkand-travel"
-    },
-    {
-        "name": "Encryption",
-        "url": "https://projects.iqbolshoh.uz/encryption/",
-        "img": "src/images/projects/encryption.png",
-        "github": "https://github.com/Iqbolshoh/javascript-text-encryption"
-    },
-    {
-        "name": "Slider",
-        "url": "https://projects.iqbolshoh.uz/slider/",
-        "img": "src/images/projects/slider.png",
-        "github": "https://github.com/Iqbolshoh/template-javascript-slider"
-    },
-    {
-        "name": "Timer",
-        "url": "https://projects.iqbolshoh.uz/timer/",
-        "img": "src/images/projects/timer.png",
-        "github": "https://github.com/Iqbolshoh/javascript-timer"
-    },
-    {
-        "name": "Clock",
-        "url": "https://projects.iqbolshoh.uz/clock/",
-        "img": "src/images/projects/clock.png",
-        "github": "https://github.com/Iqbolshoh/javascript-clock"
-    },
-    {
-        "name": "XO Game",
-        "url": "https://projects.iqbolshoh.uz/xo/",
-        "img": "src/images/projects/xo_game.png",
-        "github": "https://github.com/Iqbolshoh/javascript-xo-game"
-    },
-    {
-        "name": "Calculator",
-        "url": "https://projects.iqbolshoh.uz/calculator/",
-        "img": "src/images/projects/calculator.png",
-        "github": "https://github.com/Iqbolshoh/javascript-calculator"
-    },
-    {
-        "name": "English",
-        "url": "https://projects.iqbolshoh.uz/english/",
-        "img": "src/images/projects/english.png",
-        "github": "https://github.com/Iqbolshoh/website-english-platform"
-    },
-    {
-        "name": "Market",
-        "url": "https://market.iqbolshoh.uz/",
-        "img": "src/images/projects/market.png",
-        "github": "https://github.com/Iqbolshoh/php-mysql-marketplace"
+        "name": "UZwritter.uz",
+        "url": "https://uzwritter.uz/",
+        "img": "src/images/projects/letter-edu.png",
+        "github": "https://github.com/Iqbolshoh/letter-edu"
     },
     {
         "name": "Sam-ecobench.uz",
@@ -66,15 +18,63 @@
         "github": "https://github.com/Iqbolshoh/template-business-website"
     },
     {
-        "name": "UZwritter.uz",
-        "url": "https://uzwritter.uz/",
-        "img": "src/images/projects/letter-edu.png",
-        "github": "https://github.com/Iqbolshoh/letter-edu"
+        "name": "Market",
+        "url": "https://market.iqbolshoh.uz/",
+        "img": "src/images/projects/market.png",
+        "github": "https://github.com/Iqbolshoh/php-mysql-marketplace"
     },
-        {
-        "name": "Social Messenger",
-        "url": "https://messenger.iqbolshoh.uz/",
-        "img": "src/images/projects/social-messenger.png",
-        "github": "https://github.com/Iqbolshoh/php-social-messenger"
+    {
+        "name": "English",
+        "url": "https://projects.iqbolshoh.uz/english/",
+        "img": "src/images/projects/english.png",
+        "github": "https://github.com/Iqbolshoh/website-english-platform"
+    },
+    {
+        "name": "Calculator",
+        "url": "https://projects.iqbolshoh.uz/calculator/",
+        "img": "src/images/projects/calculator.png",
+        "github": "https://github.com/Iqbolshoh/javascript-calculator"
+    },
+    {
+        "name": "XO Game",
+        "url": "https://projects.iqbolshoh.uz/xo/",
+        "img": "src/images/projects/xo_game.png",
+        "github": "https://github.com/Iqbolshoh/javascript-xo-game"
+    },
+    {
+        "name": "Clock",
+        "url": "https://projects.iqbolshoh.uz/clock/",
+        "img": "src/images/projects/clock.png",
+        "github": "https://github.com/Iqbolshoh/javascript-clock"
+    },
+    {
+        "name": "Timer",
+        "url": "https://projects.iqbolshoh.uz/timer/",
+        "img": "src/images/projects/timer.png",
+        "github": "https://github.com/Iqbolshoh/javascript-timer"
+    },
+    {
+        "name": "Slider",
+        "url": "https://projects.iqbolshoh.uz/slider/",
+        "img": "src/images/projects/slider.png",
+        "github": "https://github.com/Iqbolshoh/template-javascript-slider"
+    },
+    {
+        "name": "Encryption",
+        "url": "https://projects.iqbolshoh.uz/encryption/",
+        "img": "src/images/projects/encryption.png",
+        "github": "https://github.com/Iqbolshoh/javascript-text-encryption"
+    },
+    {
+        "name": "Travel site",
+        "url": "https://travel-samarkand.netlify.app/",
+        "img": "src/images/projects/travel_site.png",
+        "github": "https://github.com/Iqbolshoh/website-samarkand-travel"
+    },
+    {
+        "name": "Form",
+        "url": "https://projects.iqbolshoh.uz/form/",
+        "img": "src/images/projects/form.png",
+        "github": "https://github.com/Iqbolshoh/template-html-css-form"
     }
 ]
