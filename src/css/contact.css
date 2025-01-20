@@ -1,6 +1,11 @@
+.header-container {
+    position: static !important;
+}
+
 .contact {
     text-align: center;
-    margin-top: 105px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .contact__title {
@@ -89,10 +94,6 @@
     .contact__form {
         padding: 9px;
     }
-
-    .contact {
-        margin-top: 250px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -108,10 +109,6 @@
 
     .contact__form {
         padding: 7px;
-    }
-
-    .contact {
-        margin-top: 150px;
     }
 }
 
@@ -129,10 +126,6 @@
 
     .contact__info-item p {
         font-size: 14px;
-    }
-
-    .contact {
-        margin-top: 120px;
     }
 
     .contact__title {
@@ -153,10 +146,6 @@
 
     .contact__info-item i {
         font-size: 22px;
-    }
-
-    .contact {
-        margin-top: 80px;
     }
 
     .contact__description {
