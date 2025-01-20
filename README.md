@@ -10,7 +10,7 @@ Below, you'll find information on how to navigate and contribute to the project.
 This is the source code for my personal website, which includes sections such as "About", "Portfolio", and "Contact".
 It’s designed to be a simple and clean representation of my skills, projects, and how to reach me.
 
-### Desktop View
+### View
 
 <p align="center">
   <img src="./src/images/desktop(index).png" alt="Page index" width="49%" style="display: inline-block;">
