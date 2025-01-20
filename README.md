@@ -21,18 +21,6 @@ It’s designed to be a simple and clean representation of my skills, projects, 
   <img src="./src/images/desktop(contact).png" alt="Page contact" width="49%" style="display: inline-block;">
 </p>
 
-### Mobile View
-
-<p align="center">
-  <img src="./src/images/mobile(index).png" alt="Page index" width="49%" style="display: inline-block;">
-  <img src="./src/images/mobile(about).png" alt="Page about" width="49%" style="display: inline-block;">
-</p>
-<p align="center">
-  <img src="./src/images/mobile(portfolio).png" alt="Page portfolio" width="49%" style="display: inline-block;">
-  <img src="./src/images/mobile(contact).png" alt="Page contact" width="49%" style="display: inline-block;">
-</p>
-
-
 ## Technologies Used
 
 <div style="display: flex; flex-wrap: wrap; gap: 5px;">
