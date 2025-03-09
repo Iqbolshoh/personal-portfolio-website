@@ -1,4 +1,4 @@
-# 🌐 Ilhomjonov Iqbolshoh - Personal Website 💻  
+# 🌐 Ilhomjonov Iqbolshoh - Personal Website
 
 ![Banner](./src/images/banner.png)  
 
