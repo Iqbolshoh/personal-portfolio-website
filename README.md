@@ -4,7 +4,7 @@
 
 Welcome to my **personal website repository**! 🎉 This site serves as a digital representation of **who I am**, my **skills**, and the **projects** I’ve worked on. Built with a **clean and modern design**, this portfolio highlights my journey as a **Full-Stack Developer** from **Samarkand**.  
 
-## 📌 Overview  
+## 📌 Overview
 
 This website includes the following sections:  
 
