@@ -6,14 +6,14 @@ Welcome to my **personal website repository**! 🎉 This site serves as a digita
 
 ## 📌 Overview
 
-This website includes the following sections:  
+This website includes the following sections:
 
 🔹 **Home** – Introduction to who I am.  
 🔹 **About** – My background, skills, and experience.  
 🔹 **Portfolio** – A showcase of my best projects.  
 🔹 **Contact** – Get in touch with me via email or phone.  
 
-## 🖥️ Preview  
+## 🖥️ Preview
 
 <p align="center">
   <img src="./src/images/desktop(index).png" alt="Home Page" width="49%">
